@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgba(11, 3, 32, 0.623), rgba(0, 0, 0, 0.876)), url(/IMG/parkville.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: rgb(92, 80, 80);
+    padding: 40px;
+    width: 35%;
+    text-align: center;
+    border-radius: 12px;
+}
+
+input {
+    padding: 20px 40px;
+    margin: 20px;
+    border-radius: 12px;
+    border: none;
+    border: 1px solid blueviolet;
+}
+
+::placeholder {
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+    color: blue;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid rgb(251, 122, 227);
+    padding: 20px 40px;
+    background: rgb(20, 19, 21);
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+    /* background-color: gray;
+    color: black; */
+}

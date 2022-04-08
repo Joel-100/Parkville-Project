@@ -1,0 +1,51 @@
+doctype html
+link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet')
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+// ---- Include the above in your HEAD tag --------
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Fonts
+  link(rel='dns-prefetch' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css')
+  link(rel='icon' href='Favicon.png')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+  title  Parking Section 
+nav.navbar.navbar-expand-lg.navbar-light.navbar-laravel
+  .container
+    a.navbar-brand(href='#') Manager Parking Section
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href='#') Logout
+        li.nav-item
+          a.nav-link(href='#')
+table.table
+  thead
+    tr
+      th(scope='col') User Name
+      th(scope='col') Number plate
+      th(scope='col') Car model
+      th(scope='col') Date
+      th(scope='col') Entry Time
+      
+  tbody
+    if  parkingRegisters.length 
+    each parkingRegister in parkingRegisters 
+     tr
+      td #{parkingRegister.drivername}
+      td #{parkingRegister.numberplate}
+      td #{parkingRegister.model}
+      td #{parkingRegister.date}
+      td #{parkingRegister.entrytime}
+      td
+        a(href='#') Edit &nbsp;
+        a(href='#') Delete
+
+      
+    

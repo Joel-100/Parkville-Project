@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/public/styles.css" rel="stylesheet">
+    <script src="/public/bootstrap/js/bootstrap.js"></script>
+    <title>Vehicle Registration</title>
+</head>
+<body class="bg-wrap-reg">
+
+  <div >
+    <img class="img-bg" src="../public/images/bob-flavin-pic.jpg" alt="Image">
+
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+      <a class="nav-link nav-item"  href="#">Parking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link nav-item" aria-current="page" href="#">Add Vehicle/Boda Boda</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Generate Report
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Parking Report</a></li>
+              <li><a class="dropdown-item" href="#">Sign-off Report</a></li>
+            </ul>
+          </li> 
+        </ul>
+
+        <!-- This is the logout button -->
+        <form class="d-flex "> 
+       <button class="btn btn-outline-success logout-button" type="submit">Logout</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End of the nav bar -->
+  
+
+  
+  
+  <div class=" container py-5 h-100 "> 
+    <div class="container row justify-content-center " >
+      <div class="col col-xl-10"  >
+        <div class="card bg-light"   >
+          <div class="container col-md-7">
+            <div class="container">
+
+              <form class="form-horizontal" role="form" action="/register">
+                  <h2>Registration</h2>
+                  <div class="form-group">
+                      <label for="firstName" class="col-sm-3 control-label">First Name*</label>
+                      <div class="col-sm-9">
+                          <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus name="firstName">
+                      </div>
+                  </div>
+                  <br>
+
+                  <div class="form-group">
+                      <label for="lastName" class="col-sm-3 control-label">Last Name*</label>
+                      <div class="col-sm-9">
+                          <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus name="lastName">
+                      </div>
+                  </div>
+                  <br>
+
+                  <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">NIN Number*</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" placeholder="Enter yout NIN number" class="form-control" autofocus name="userNin">
+                    </div>
+                </div>
+                <br>
+
+                  <div class="form-group">
+                      <label for="email" class="col-sm-3 control-label">Email* </label>
+                      <div class="col-sm-9">
+                          <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                      </div>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                      <label for="password" class="col-sm-3 control-label">Password*</label>
+                      <div class="col-sm-9">
+                          <input type="password" id="password" placeholder="Password" class="form-control" name="userPassword">
+                      </div>
+                  </div>
+                  <br>
+
+                  <div class="form-group">
+                      <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+                      <div class="col-sm-9">
+                          <input type="password" id="password" placeholder="Password" class="form-control" name="userPassword">
+                      </div>
+                  </div>
+                  <br>
+
+                  <div class="form-group">
+                      <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+                      <div class="col-sm-9">
+                          <input type="date" id="birthDate" class="form-control" name="doBirth">
+                      </div>
+                  </div>
+                  <br>
+
+                  <div class="form-group">
+                      <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label>
+                      <div class="col-sm-9">
+                          <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control" name="userNumber">
+                          
+                      </div>
+                  </div>
+                  <br>
+                 
+                   
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Gender*</label>
+                      <div class="col-sm-6">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <label class="radio-inline">
+                                      <input type="radio" id="femaleRadio" value="Female" name="female">Female
+                                  </label>
+                              </div>
+                              <div class="col-sm-4">
+                                  <label class="radio-inline">
+                                      <input type="radio" id="maleRadio" value="Male" name="male">Male
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div> <!-- /.form-group -->
+                  <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3">
+                          <span class="help-block">*Required fields</span>
+                      </div>
+                      <br>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Register</button>
+              </form> <!-- /form -->
+          </div>
+          
+           <!-- ./container -->
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue bg-light">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="/"> Parkville Day and Night Parking</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  
+</body>
+</html>

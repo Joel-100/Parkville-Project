@@ -1,0 +1,93 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='/bootstrap/css/bootstrap.css' rel='stylesheet')
+  link(href='/styles.css' rel='stylesheet')
+  script(src='/bootstrap/js/bootstrap.js')
+  title Vehicle Registration
+div
+  
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .container
+      a.nav-link.nav-item(href='#') 
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.nav-item(aria-current='page' href='#') 
+          li.nav-item.dropdown
+            a#navbarDropdown(href='#' role='button' data-bs-toggle='' aria-expanded='false')
+              
+            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+              li
+                a.dropdown-item(href='#') 
+              li
+                a.dropdown-item(href='#') 
+        
+        
+      
+  .container.py-5.h-100
+    .container.row.justify-content-center
+      .col.col-xl-10
+        .card.bg-light
+          .container.col-md-7
+            .container
+              form.form-horizontal(role='form' action='/register' method='POST')
+                h2  Registration
+                .form-group
+                  label.col-sm-3.control-label(for='firstName') Name*
+                  .col-sm-9
+                    input#firstName.form-control(type='text' placeholder='First Name' autofocus='' name='username')
+                    br
+                
+                .form-group
+                  label.col-sm-3.control-label(for='email') Email* 
+                  .col-sm-9
+                    input#email.form-control(type='email' placeholder='Email' name='email')
+                br
+                .form-group
+                  label.col-sm-3.control-label(for='password') Password*
+                  .col-sm-9
+                    input#password.form-control(type='password' placeholder='Password' name='password')
+                br
+                .form-group
+                  label.col-sm-3.control-label(for='password') Confirm Password*
+                  .col-sm-9
+                    input#password.form-control(type='password' placeholder='Password' name='confirmpassword')
+                
+                br
+                .form-group
+                  label.col-sm-3.control-label(for='phoneNumber') Phone number 
+                  .col-sm-9
+                    input#phoneNumber.form-control(type='phoneNumber' placeholder='Phone number' name='phonenumber')
+                    br
+                    
+                
+
+                  label.col-sm-3.control-label(for='vehicleType')
+                     Vehicle  Manager Role*
+                  .col-sm-9
+                    select.form-control(name='role' autofocus='' required)
+                      option(value='Default' selected='') Click to Select Role
+                      option(value='parkingManager') Parking section Manager
+                      option(value='batteryManager') Battery section manager
+                      option(value='tyreManager') Car tyre clinic section manager
+                    
+                
+                  br
+                button.btn.btn-primary.btn-block.joel(type='submit') Register 
+              
+
+// Footer
+footer.page-footer.font-small.blue.bg-light
+  // Copyright
+  .footer-copyright.text-center.py-3
+    | &copy; 2022 Copyright:
+    a(href='/')  Parkville Day and Night Parking
+  // Copyright
+// Footer
+           
+            

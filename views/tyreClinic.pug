@@ -1,7 +1,7 @@
 doctype html
 link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet')
-script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
-script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+//- script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+//- script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
 // ---- Include the above in your HEAD tag --------
 head
   // Required meta tags
@@ -17,6 +17,7 @@ head
 nav.navbar.navbar-expand-lg.navbar-light.navbar-laravel
   .container
     a.navbar-brand(href='#') Tyre Clinic
+    a.navbar-brand(href='/dashBoard') Dashboard  
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse
@@ -36,7 +37,7 @@ main.my-form
               .form-group.row
                 label.col-md-4.col-form-label.text-md-right(for='firstName') Tyre Make
                 .col-sm-6
-                  select#tyreMake.form-control(name='tyremake' autofocus='' )
+                  select#tyremake.form-control(name='tyremake' autofocus='' )
                     option(value='Default' selected='') Select Type of Tyre
                     option(value='pirelli') Pirelli
                     option(value='firestone') Firestone
@@ -63,13 +64,13 @@ main.my-form
               .form-group.row
                 label.col-md-4.col-form-label.text-md-right(for='firstName') Tyre Services
                 .col-sm-6
-                  select.form-control(name='tyreservices' autofocus='' )
+                  select#tyreservices.form-control(name='tyreservices' autofocus='' )
                     option(value='Default' selected='') Select Type of Service
                     option(value='tyrepressure') Tyre Pressure
                     option(value='tyrepuncture') Tyre Puncture
                     option(value='valves') Valves
                     option(value='') null
-                  span#tyreServiceError 
+                  span#tyreServicesError 
               .form-group.row
                 label.col-md-4.col-form-label.text-md-right(for='firstName') Tyre Services Fees
                 .col-sm-6
@@ -79,7 +80,7 @@ main.my-form
                     option(value='5000') 5,000
                     option(value='5000') 5,000
                     option(value='') null
-                  span#tyreserviceFeeError 
+                  span#tyreServiceFeesError 
               .col-md-6.offset-md-4
                 button.btn.btn-primary(type='submit')
                   | Submit

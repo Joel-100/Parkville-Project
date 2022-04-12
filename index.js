@@ -24,8 +24,9 @@ const vehicleReg   = require('./routes/vehicleRegRouter');
 const tyreclinic   = require('./routes/carTyreclinicRouter');
 const batteryReg   = require('./routes/batteryRouter');
 const parkingReport = require('./routes/reportForm')
+const dashBoard = require('./routes/dashBoard')
 
-
+ 
 
 
 mongoose.connect(config.database);
@@ -81,18 +82,16 @@ application.use(function (req, res, next) {
   next();
 });
 
-
-
-
 //Routes section
 // application.use('/', loginPage);
 // application.use('/', vehicleRegister);
-application.use('/', userRegister);
 application.use('/', loginPage);
+application.use('/', userRegister);
 application.use('/', vehicleReg );
 application.use('/', tyreclinic);
 application.use ('/', batteryReg);
-application.use('/', parkingReport)
+application.use('/', parkingReport);
+application.use('/', dashBoard)
 // application.get('/', () => {
 //     res.render('message', {message: req.flash('Sucessfully submitted')});
 // })

@@ -1,17 +1,17 @@
 const validform = () =>{
-    const numberPlate = document.getElementById('numberPlate')
+    const numberPlate = document.getElementById('numberplate')
     const plateError = document.getElementById('plateError')
     const model = document.getElementById('model')
     const modelError = document.getElementById('modelError')
-    const vehicleType = document.getElementById('vehicleType')
+    const vehicleType = document.getElementById('vehicletype')
     const vehicleTypeError = document.getElementById('vehicleTypeError')
-    const driverName = document.getElementById('driverName')
+    const driverName = document.getElementById('drivername')
     const driverNameError = document.getElementById('driverNameError')
     const date = document.getElementById('date') 
     const dateError = document.getElementById('dateError')
-    const phoneNumber = document.getElementById('phoneNumber')
+    const phoneNumber = document.getElementById('phonenumber')
     const phoneNumberError = document.getElementById('phoneNumberError')
-    const entryTime = document.getElementById('entryTime')
+    const entryTime = document.getElementById('entrytime')
     const entryTimeError = document.getElementById('entryTimeError')
 
     if(numberPlate.value == ""){
@@ -67,7 +67,7 @@ const validform = () =>{
     if(date.value == ""){
         date.style.border = "1px solid red"
         dateError.textContent = "Please select a date"
-        dateError.style. = "color: red"
+        dateError.style = "color: red"
         return false
 
     }else{

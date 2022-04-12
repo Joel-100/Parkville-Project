@@ -1,5 +1,5 @@
 const validform = () =>{
-    const batterySize = document.getElementById('batterySize')
+    const batterySize = document.getElementById('batterysize')
     const batterySizeError = document.getElementById('batterySizeError')
     const date = document.getElementById('date')
     const dateError = document.getElementById('dateError')
@@ -9,7 +9,7 @@ const validform = () =>{
 
     if(batterySize.value == ""){
         batterySize.style.border = "1px solid red"
-        batterySizeError.textContent = "Please provide a number plate"
+        batterySizeError.textContent = "Please provide a battery size"
         batterySizeError.style = "color: red"
         return false
     }else{

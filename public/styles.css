@@ -142,9 +142,30 @@ a {
 }
 
 .joel{
-    background-color: rgb(241, 29, 29);
+    background-color: #4d96ff;
 }
 
 .joel:hover{
-   background-color: black;
+   background-color: #11468f;
+}
+
+.login-btn {
+    background-color: #2eb086;
+    padding: 10px 20px;
+    border: 1px solid #2eb086;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.login-btn a {
+    color: #fff;
+}
+
+.login-btn a:hover {
+    color: #fff;
+}
+
+img {
+    width: 250px;
+    height: 300px;
 }

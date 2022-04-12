@@ -42,7 +42,7 @@ router.post('/parking',(req,res)=>{
                 return;
             }
             else{
-                res.redirect('/parking');
+                res.redirect('/parkingReport');
             }
 
         });

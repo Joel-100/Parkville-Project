@@ -1,15 +1,15 @@
 const validform = () =>{
-    const tyreMake = document.getElementById('tyreMake')
+    const tyreMake = document.getElementById('tyremake')
     const tyreMakeError = document.getElementById('tyreMakeError')
-    const tyreSize = document.getElementById('tyreSize')
+    const tyreSize = document.getElementById('tyresize')
     const tyreSizeError = document.getElementById('tyreSizeError')
-    const tyreAmount = document.getElementById('tyreAmount')
+    const tyreAmount = document.getElementById('tyreamount')
     const tyreAmountError = document.getElementById('tyreAmountError')
-    const carModel = document.getElementById('carModel')
+    const carModel = document.getElementById('carmodel')
     const carModelError = document.getElementById('carModelError')
-    const tyreServices = document.getElementById('tyreServices') 
+    const tyreServices = document.getElementById('tyreservices') 
     const tyreServicesError = document.getElementById('tyreServicesError') 
-    const tyreServiceFees = document.getElementById('tyreServiceFees')
+    const tyreServiceFees = document.getElementById('tyreservicefees')
     const tyreServiceFeesError = document.getElementById('tyreServiceFeesError')
     
 
@@ -25,7 +25,7 @@ const validform = () =>{
 
     if(tyreSize.value == ""){
         tyreSize.style.border = "1px solid red"
-        tyreSizeError.textContent = "Please provide the car model"
+        tyreSizeError.textContent = "Please provide a tyre size"
         tyreSizeError.style = "color: red"
         return false
     }else{
@@ -35,7 +35,7 @@ const validform = () =>{
 
     if(tyreAmount.value == ""){
         tyreAmountError.style.border = "1px solid red"
-        tyreAmountError.textContent = "Please select a vehicle type"
+        tyreAmountError.textContent = "Please select tyre amount"
         tyreAmountError.style = "color: red"
         return false
     }else{
@@ -45,7 +45,7 @@ const validform = () =>{
 
     if(carModel.value == ""){
         carModel.style.border = "1px solid red"
-        carModelError.textContent = "Please select a driver name"
+        carModelError.textContent = "Please select a car model"
         carModelError.style = "color: red"
         return false
     }else{
@@ -55,7 +55,7 @@ const validform = () =>{
 
     if(tyreServices.value == ""){
         tyreServices.style.border = "1px solid red"
-        tyreServices.textContent = "Please select a phone number"
+        tyreServices.textContent = "Please select a tyre service"
         tyreServices.style = "color: red"
         return false
     }else{
@@ -65,7 +65,7 @@ const validform = () =>{
     
     if(tyreServiceFees.value == ""){
         tyreServiceFees.style.border = "1px solid red"
-        tyreServiceFees.textContent = "Please select a phone number"
+        tyreServiceFees.textContent = "Please select tyre service fees"
         tyreServiceFees.style = "color: red"
         return false
     }else{
